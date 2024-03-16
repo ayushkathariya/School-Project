@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1; 
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img { 
+     max-width: 100%; 
+     height: auto;
+	 width: auto;
+     border:0;
+      vertical-align:top;
+}
+/*================================================================================ */
+
+body {color: #7f7f7f; font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 1.5em; background-color: #fff; text-align: center; }
+
+a{ color:#7c7c7c; text-decoration: none; 
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+a:hover{text-decoration:none; color:#72b9ea}
+a:focus{ outline:none; }
+:focus{ outline:none; }
+h1            { font-size:1.5em; line-height:normal; font-weight:normal; }
+h2            { font-size:1.33em; line-height:normal; font-weight:normal; }
+h3            { font-size:1.09em; line-height:normal; font-weight:bold; }
+h4            { font-size:1em; line-height:normal; font-weight:bold; }
+h5            { font-size:0.91em; line-height:normal; font-weight:bold; }
+h6            { font-size:0.91em; line-height:normal; font-weight:normal; }
+.f-col { width: 33.333%; float: left; padding: 0 15px; }
+.f-col2 { width: 50%; float: left; }
+
+/*==Header===========================*/
+.header .header-top {
+  background: rgba(0, 0, 0, 0) url("../images/school.jpg") no-repeat scroll center bottom / cover ;
+  border-bottom: 16px solid #eaeaea;
+  padding: 510px 0 510px;
+  position: relative;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.contact-form .card-header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+.form-group label {
+  font-weight: bold;
+}
+.form-control {
+  border-radius: 20px;
+}
+
+
+.header .header-top:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    content: ""
+}
+h1.logo, .title-page {
+    position: relative;
+    z-index: 9
+}
+.header .header-content { padding: 15px 0;  }
+
+.header .logo strong{
+ position: absolute;
+top: -999em;
+left: -999em;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+text-indent: -999em;
+overflow: hidden;   
+}
+
+.header .banner-box { min-height: 71px; color: #fff; padding: 8px; }
+.header .banner-box1 { margin-right: 8px; background: #ff8788; }
+.header .banner-box2 { margin-left: 8px; background: #5ed9e8; }
+.header .banner-box .box-inner { overflow: hidden; margin-left: 100px; }
+.header .banner-box .box-inner:before { width: 55px; height: 55px; display: inline-block; float: left; border-radius: 100%; background: rgba(0,0,0,0.5); content:""; margin-right: 20px; line-height: 55px; text-align: center;}
+.header .banner-box1 .box-inner:before { content: "\f0e0"; font-family: FontAwesome; font-size: 30px;  }
+.header .banner-box2 .box-inner:before { content: "one"; font-size: 14px; text-transform: uppercase; }
+.header .banner-box .box-inner .content { margin-left: 75px; text-align: left;}
+.header .banner-box .box-inner .content h2 { font-size: 20px; text-transform: uppercase; } 
+.header .banner-box1 .box-inner .content { margin-top: 5px; }
+.header .banner-box2 .box-inner .content { margin-top: 15px; }
+
+/* title-page */
+.title-page {}
+.title-page .title h1 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 52px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+.title-page a, .advertise-area a {
+  background: #f5b01e none repeat scroll 0 0;
+  border-radius: 30px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 10px;
+  padding: 11px 30px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+.title-page a:hover {
+  background: #1BB4B9;
+  color: #fff;
+}
+.advertise-area a:hover{background: #fff; color: #1BB4B9}
+.padding{padding-top: 60px}
+.pages-title {
+  margin-bottom: 48px;
+  margin-top: 31px;
+}
+.pages-title h3 {
+  color: #333333;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.pages-title h1 {
+  color: #333333;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.advertise-area h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  margin-bottom: 0;
+}
